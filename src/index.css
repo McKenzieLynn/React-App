@@ -29,8 +29,39 @@ code {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* color for the new note function */
+.note.new{
+  background-color: #ffc0cb;
+}
+
+/* beautify the test input area */
+textarea{
+    border: none;
+    resize: none;
+    background-color:	#ffc0cb;
+}
+
+/* removing box from text area */
+textarea:focus{
+  outline: none;
+}
+
+/* Aesthetic button */
+.save{
+  background-color: #ebe9e7;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+/* changing what button does when user hovers over it */
+.save:hover{
+  background-color: #c4bdb7;
+  cursor: pointer;
+}
+
 .note{
-  background-color: #FFB6C1; /* bg color for note */
+  background-color: #F8C8DC; /* bg color for note */
   border-radius: 10px; /* adding curve to corners */
   padding: 1rem; /* creating padding so text doesn't run outside of note */
   min-height: 170px; /* note height */
