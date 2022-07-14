@@ -19,6 +19,15 @@ code {
   justify-content: space-between;
 }
 
+/* Dark mode*/
+.dark-mode{
+  background-color: #424549;
+}
+
+.dark-mode h1{
+  color: white; /* Makes any text white when in dark mode */
+}
+
 .container {
   /* ensuring notes stay in frame regardless of size */
   max-width: 960px;
@@ -27,6 +36,7 @@ code {
   /* prevents notes from being on edge of screen */
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh; /* Fixing dark mode bug at bottom */
 }
 
 .notes-list {
