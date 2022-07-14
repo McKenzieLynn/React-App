@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.note{
+  background-color: #FFB6C1; /* bg color for note */
+  margin-bottom: 10px; /* adding space in btwn notes */
+  border-radius: 10px; /* adding curve to corners */
+  padding: 1rem; /* creating padding so text doesn't run outside of note */
+  min-height: 170px; /* note height */
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
