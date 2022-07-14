@@ -78,3 +78,8 @@ textarea:focus{
   align-items: center;
   justify-content: space-between;
 }
+
+/* Making cursor point when hover over trash can */
+.delete-icon {
+  cursor: pointer;
+}
