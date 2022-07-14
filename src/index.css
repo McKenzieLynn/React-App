@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+/* Header */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .container {
   /* ensuring notes stay in frame regardless of size */
   max-width: 960px;
