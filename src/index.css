@@ -12,10 +12,25 @@ code {
     monospace;
 }
 
+.container {
+  /* ensuring notes stay in frame regardless of size */
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  /* prevents notes from being on edge of screen */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.notes-list {
+  display: grid; /* css grid container */
+  grid-gap: 1rem;
+  /* auto-fit allows notes to fit in frame ; minmax is ensuring notes don't surpass that size */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 .note{
   background-color: #FFB6C1; /* bg color for note */
-  margin-bottom: 10px; /* adding space in btwn notes */
   border-radius: 10px; /* adding curve to corners */
   padding: 1rem; /* creating padding so text doesn't run outside of note */
   min-height: 170px; /* note height */
